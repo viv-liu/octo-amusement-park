@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:stretchColumns="0,1">
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:text="Abracadabra!" 
+                    android:paddingTop="10dp"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:paddingBottom="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="2pm, 3pm, 3:30pm, 7pm" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info24" 
+                android:paddingRight="16dp"
+                android:layout_margin="20dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		       android:background="#00000000"/>
+        </TableRow>
+        <View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinosaurs are back!" 
+                    android:paddingTop="10dp"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:paddingBottom="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="12pm, 3:15pm, 3:45pm, 6pm, 7pm" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info24" 
+                android:paddingRight="16dp"
+                android:layout_margin="20dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		       android:background="#00000000"/>
+        </TableRow>
+        
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="But how?" 
+                    android:paddingTop="10dp"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:paddingBottom="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="11am, 3:45pm, 4:30pm, 8pm" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info24" 
+                android:paddingRight="16dp"
+                android:layout_margin="20dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		       android:background="#00000000"/>
+        </TableRow>
+        <View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You'll see." 
+                    android:paddingTop="10dp"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:paddingBottom="5dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="2:15pm" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info24" 
+                android:paddingRight="16dp"
+                android:layout_margin="20dp"
+		        android:adjustViewBounds="true"
+		        android:scaleType="fitCenter"
+		       android:background="#00000000"/>
+        </TableRow>
+        <View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@android:color/darker_gray"/>
+    </TableLayout>
+</ScrollView>

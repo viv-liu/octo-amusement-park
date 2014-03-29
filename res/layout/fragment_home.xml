@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout 
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical" >
+	  <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="15sp"
+		        android:paddingLeft="10dp"
+		        android:paddingTop="10dp"
+		        android:textColor="@android:color/darker_gray"
+		      android:text="I am at:" />
+	
+	    <ImageButton
+	        android:id="@+id/imageButton1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds="true"
+	        android:layout_margin="10dp"
+	        android:scaleType="fitCenter"
+	        android:background="?android:attr/selectableItemBackground"
+	        android:src="@drawable/smallmapshrink600" />
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/darker_gray"
+	        android:text="Rides near me:" />
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp">
+		    <TableLayout
+		        android:id="@+id/tableLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 
+		        android:layout_centerHorizontal="true"
+		        android:background="?android:attr/selectableItemBackground"
+		        android:stretchColumns="0,1,2">
+		        <TableRow
+		            android:id="@+id/tableRow1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:gravity="center_vertical">
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="10dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:textSize="17sp"
+		                android:text="Cloud Grazer" />
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/walking24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="6m" />
+		            </LinearLayout>
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/time24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="2h" />
+		            </LinearLayout>
+		        </TableRow>
+		        <View
+					    android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="@android:color/darker_gray"/>
+		        <TableRow
+		            android:id="@+id/tableRow2"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:gravity="center_vertical">
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="10dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:textSize="17sp"
+		                android:text="Big Drop" />
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/walking24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="10m" />
+		            </LinearLayout>
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/time24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="40m" />
+		            </LinearLayout>
+		        </TableRow>
+		        <View
+					    android:layout_width="match_parent"
+					    android:layout_height="1dp"
+					    android:background="@android:color/darker_gray"/>
+		        <TableRow
+		            android:id="@+id/tableRow3"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:gravity="center_vertical">
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="10dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:textSize="17sp"
+		                android:text="Smash" />
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/walking24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="12m" />
+		            </LinearLayout>
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/time24" />
+		                <TextView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="1h" />
+		            </LinearLayout>
+		        </TableRow>
+		    </TableLayout>
+	    </RelativeLayout>
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:paddingTop="5dp"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/darker_gray"
+	        android:text="News:" />
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:padding="5dp">
+		    <TableLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		       
+		        <TableRow
+		            android:id="@+id/tableRow4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="8dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:text="Check out #DinoGroup in the Prehistoric Arena at 12-2pm!" />
+		        </TableRow>
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@android:color/darker_gray"/>
+		        <TableRow
+		            android:id="@+id/tableRow5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="8dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:text="$50 XLarge Pizza! Only at PizzaPlace in Food Place. #Pizza4Lyfe" />
+		        </TableRow>
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@android:color/darker_gray"/>
+		        <TableRow
+		            android:id="@+id/tableRow6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:padding="8dp"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="25dp"
+		                android:text="Looks like #Cloud_Grazer is kinda packed right now. Line up wisely..." />
+		        </TableRow>
+		    </TableLayout>
+	    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

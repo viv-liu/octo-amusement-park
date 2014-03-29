@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<TableLayout
+    	android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="0,1"
+        android:padding="10dp">
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:text="Scare Factor: "
+	            android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:adjustViewBounds="true"
+		        android:background="#0000"
+		        android:scaleType="fitCenter"
+                android:src="@drawable/scarerating150" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Min Height:"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+                android:textSize="17sp"
+                android:text="54''" />
+
+        </TableRow>
+
+    </TableLayout>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tableLayout1"
+        android:adjustViewBounds="true"
+        android:background="#0000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rollercoaster600" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:padding="10dp"
+        android:text="A 800m climb into the sky, you'll literally graze the clouds. Make sure you don't eat a lot before climbing in."
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel" />
+
+</RelativeLayout>

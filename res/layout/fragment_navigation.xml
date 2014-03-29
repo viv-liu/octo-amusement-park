@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="#0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bigmap1000" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_margin="12dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/blueadd48"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/washroom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="191dp"
+        android:visibility="invisible"
+        android:src="@drawable/washroom48" />
+
+    <ImageView
+        android:id="@+id/washroom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:visibility="invisible"
+        android:src="@drawable/washroom48" />
+
+    <ImageView
+        android:id="@+id/rest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/washroom2"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@+id/washroom2"
+        android:visibility="invisible"
+        android:src="@drawable/bench48" />
+
+    <ImageView
+        android:id="@+id/guest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/washroom2"
+        android:layout_toLeftOf="@+id/washroom2"
+        android:visibility="invisible"
+        android:src="@drawable/question48" />
+
+    <ImageView
+        android:id="@+id/rest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/washroom1"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="19dp"
+        android:visibility="invisible"
+        android:src="@drawable/bench48" />
+
+    <ImageView
+        android:id="@+id/food1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rest2"
+        android:layout_below="@+id/washroom1"
+        android:layout_marginTop="19dp"
+        android:visibility="invisible"
+        android:src="@drawable/food48" />
+
+    <ImageView
+        android:id="@+id/food2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignLeft="@+id/guest1"
+        android:visibility="invisible"
+        android:src="@drawable/food48" />
+
+</RelativeLayout>
