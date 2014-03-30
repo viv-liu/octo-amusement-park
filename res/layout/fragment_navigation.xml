@@ -17,7 +17,7 @@
         android:src="@drawable/bigmap1000" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
@@ -29,73 +29,107 @@
         android:background="?android:attr/selectableItemBackground" />
 
     <ImageView
+        android:id="@+id/rest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/guest1"
+        android:src="@drawable/benchpin36"
+        android:visibility="invisible" />
+
+    <ImageView
         android:id="@+id/washroom1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="191dp"
-        android:visibility="invisible"
-        android:src="@drawable/washroom48" />
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginTop="62dp"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:src="@drawable/washroompin36"
+        android:visibility="invisible" />
 
-    <ImageView
-        android:id="@+id/washroom2"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="54dp"
-        android:layout_toLeftOf="@+id/imageButton2"
-        android:visibility="invisible"
-        android:src="@drawable/washroom48" />
+        android:layout_below="@+id/guest1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/guest1"
+        android:background="?android:attr/selectableItemBackground"
+        android:visibility="invisible" 
+        android:src="@drawable/attractpin36" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignTop="@+id/rest1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="false"
+        android:src="@drawable/attractpin36"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/rest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/washroom2"
-        android:layout_marginTop="42dp"
-        android:layout_toRightOf="@+id/washroom2"
-        android:visibility="invisible"
-        android:src="@drawable/bench48" />
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/rest1"
+        android:src="@drawable/benchpin36"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/guest1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/washroom2"
-        android:layout_toLeftOf="@+id/washroom2"
-        android:visibility="invisible"
-        android:src="@drawable/question48" />
-
-    <ImageView
-        android:id="@+id/rest1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/washroom1"
-        android:layout_marginRight="33dp"
-        android:layout_marginTop="19dp"
-        android:visibility="invisible"
-        android:src="@drawable/bench48" />
-
-    <ImageView
-        android:id="@+id/food1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/rest2"
-        android:layout_below="@+id/washroom1"
-        android:layout_marginTop="19dp"
-        android:visibility="invisible"
-        android:src="@drawable/food48" />
+        android:layout_below="@+id/rest1"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/food1"
+        android:src="@drawable/customerpin36"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/food2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButton2"
-        android:layout_alignLeft="@+id/guest1"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/rest2"
+        android:src="@drawable/foodpin36"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/washroom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_toLeftOf="@+id/guest1"
+        android:src="@drawable/washroompin36"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/food1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/washroom2"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:src="@drawable/foodpin36"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rest2"
+        android:layout_toLeftOf="@+id/imageButton1"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="25dp"
+        android:paddingTop="40dp"
         android:visibility="invisible"
-        android:src="@drawable/food48" />
+        android:src="@drawable/attractspeechbub250" />
 
 </RelativeLayout>

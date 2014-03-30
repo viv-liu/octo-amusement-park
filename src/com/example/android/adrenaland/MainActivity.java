@@ -170,12 +170,31 @@ public class MainActivity extends Activity {
         }
     }
 
+    public void selectItemSeeRidePin(boolean cloud, boolean bigDrop) {
+    	Fragment fragment = new FragmentNavigation();
+    	Bundle args = new Bundle();
+        args.putBoolean(FragmentNavigation.ARG_CLOUD, cloud);
+        args.putBoolean(FragmentNavigation.ARG_BIG_DROP, bigDrop);
+        fragment.setArguments(args);
+    	FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+        
+        ft.replace(R.id.content_frame, fragment).addToBackStack(null).commit();
+    	
+       mDrawerList.setItemChecked(1, true);
+       mDrawerLayout.closeDrawer(mDrawerList);
+    }
     public void selectItem(int position) {
         // update the main content by replacing fragments
         Fragment fragment = new FragmentHome();
         switch(position) {
         case 0: fragment = new FragmentHome(); break;
-        case 1: fragment = new FragmentNavigation(); break;
+        case 1: fragment = new FragmentNavigation(); 
+			        Bundle args = new Bundle();
+			        args.putBoolean(FragmentNavigation.ARG_CLOUD, false);
+			        args.putBoolean(FragmentNavigation.ARG_BIG_DROP, false);
+			        fragment.setArguments(args);
+			        break;
         case 2: fragment = new FragmentWaitTimes(); break;
         case 3: fragment = new FragmentShowTimes(); break;
         case 4: fragment = new FragmentRideInfo(); break;

@@ -49,12 +49,4 @@
         android:text="20m"
         android:textSize="17dp" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDescription"
-        android:layout_centerHorizontal="true"
-        android:text="Cancel" />
-
 </RelativeLayout>
