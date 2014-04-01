@@ -41,6 +41,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+                android:clickable="false"
                 android:text="Kids" />
         </TableRow>
         <TableRow
@@ -54,12 +55,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+                android:clickable="false"
                 android:text="Water" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+                android:clickable="false"
                 android:text="Spinning" />
             </TableRow>
             <TableRow
@@ -74,12 +77,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+                android:clickable="false"
                 android:text="Arcade" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+                android:clickable="false"
                 android:text="Simulation" />
             </TableRow>
     </TableLayout>
@@ -112,12 +117,14 @@
 	                android:layout_width="0dp"
 	                android:layout_height="match_parent"
 	                android:layout_weight="0.5"
+	                android:clickable="false"
 	                android:text="Adrenaline" />
 	
 	            <Button
 	                android:layout_width="0dp"
 	                android:layout_height="match_parent"
 	                android:layout_weight="0.5"
+	                android:clickable="false"
 	                android:text="Kidspot" />
 	        </TableRow>
 	        <TableRow
@@ -131,12 +138,14 @@
 	                android:layout_width="0dp"
 	                android:layout_height="match_parent"
 	                android:layout_weight="0.5"
+	                android:clickable="false"
 	                android:text="H2O" />
 	
 	            <Button
 	                android:layout_width="0dp"
 	                android:layout_height="match_parent"
 	                android:layout_weight="0.5"
+	                android:clickable="false"
 	                android:text="Foodzone" />
 	            </TableRow>
 		</TableLayout>

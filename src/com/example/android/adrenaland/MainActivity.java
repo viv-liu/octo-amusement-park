@@ -162,7 +162,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    /* The click listner for ListView in the navigation drawer */
+    /* The click listener for ListView in the navigation drawer */
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -179,7 +179,7 @@ public class MainActivity extends Activity {
     	FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
         
-        ft.replace(R.id.content_frame, fragment).addToBackStack(null).commit();
+        ft.replace(R.id.content_frame, fragment).commit();
     	
        mDrawerList.setItemChecked(1, true);
        mDrawerLayout.closeDrawer(mDrawerList);
@@ -202,7 +202,7 @@ public class MainActivity extends Activity {
         }
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction ft = fragmentManager.beginTransaction();
-        ft.replace(R.id.content_frame, fragment).addToBackStack(null).commit();
+        ft.replace(R.id.content_frame, fragment).commit();
 
         // update selected item and title, then close the drawer
         if(position <= 4)
@@ -237,17 +237,8 @@ public class MainActivity extends Activity {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    public static void swapFragments(Fragment context, Fragment fragment, Bundle args, String tag, boolean addToBackStack) {
-		Fragment f = fragment;
-	    FragmentManager manager = context.getFragmentManager();
-	    if(args != null) {
-	    	f.setArguments(args);
-	    }
-	    FragmentTransaction transaction = manager.beginTransaction();
-		transaction.replace(R.id.content_frame, f, tag);
-		if(addToBackStack) {
-			transaction.addToBackStack(null);
-		}
-		transaction.commit();
-	}
+    @Override
+    public void onBackPressed() {
+       selectItem(0);
+    }
 }

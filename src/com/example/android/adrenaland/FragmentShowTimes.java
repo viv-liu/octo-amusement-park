@@ -58,7 +58,7 @@ public class FragmentShowTimes extends Fragment {
 		  public void onClick(View arg0) {
  
 			  AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-	        	builder.setTitle("Cloud Grazer")
+	        	builder.setTitle("Abracadabra!")
 	        	    		.setCancelable(false)
 			        	    .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
 				        	    @Override
